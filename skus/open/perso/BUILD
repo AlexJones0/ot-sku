@@ -61,7 +61,7 @@ offline_signature_attach(
         "{}:ecdsa_signatures".format(EXT_EARLGREY_SKUS[SKU]["signature_prefix"]),
     ],
     spx_signatures = [
-        "{}:spx_signatures".format(EXT_EARLGREY_SKUS[SKU]["signature_prefix"]),
+        "{}:slh_dsa_signatures".format(EXT_EARLGREY_SKUS[SKU]["signature_prefix"]),
     ],
     tags = ["manual"],
 )
