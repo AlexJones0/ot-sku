@@ -34,6 +34,14 @@ _ARCHIVES = {
         "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-1/presign_perso.tar.xz",
         "sha256": "5fd373330a0af0175f4ace0452b73e862bac0bdee4ccd191c729408b54835c12",
     },
+    "perso_release": {
+        "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-1-final/perso_release.tar.xz",
+        "sha256": "bf1aaf79a880bb082b8f5b885c150507e631a19552adb34e2c795aed1d5f92c5",
+    },
+    "rom_ext_release": {
+        "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-1-final/rom_ext_release.tar.xz",
+        "sha256": "d664f28dfc5f583048ff6edeb4f65d3e6d7a73d02096a8a5e1d7062646d35c50",
+    },
 }
 
 def _extra_impl(mctx):
