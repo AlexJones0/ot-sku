@@ -26,17 +26,13 @@ hub_repo = repository_rule(
 # Important note: this dictionary is read and modified by the release script (script/release.py).
 # Therefore, it needs to remain a constant dictionary which can be parsed by the python ast module.
 _ARCHIVES = {
-    "presign_perso": {
-        "url": "https://github.com/lowRISC/ot-sku/releases/download/FAKE_BUILD_20260518_rc00/presign_perso.tar.xz",
-    },
     "presign_rom_ext": {
-        "url": "https://github.com/lowRISC/ot-sku/releases/download/FAKE_BUILD_20260518_rc00/presign_rom_ext.tar.xz",
+        "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-1/presign_rom_ext.tar.xz",
+        "sha256": "5d59840d387cd33a47b45a263640c00b4260c2ebd8f6216e52b49a7eebf4f288",
     },
-    "perso_release": {
-        "url": "https://github.com/lowRISC/ot-sku/releases/download/FAKE_RELEASE_20260518_rc00/perso_release.tar.xz",
-    },
-    "rom_ext_release": {
-        "url": "https://github.com/lowRISC/ot-sku/releases/download/FAKE_RELEASE_20260518_rc00/rom_ext_release.tar.xz",
+    "presign_perso": {
+        "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-1/presign_perso.tar.xz",
+        "sha256": "5fd373330a0af0175f4ace0452b73e862bac0bdee4ccd191c729408b54835c12",
     },
 }
 
