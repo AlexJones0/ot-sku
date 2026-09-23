@@ -25,9 +25,6 @@ The following templates are included in each of the subdirs:
 - `export.json5`: Export the private key material.
 - `export_public.json5`: Export the public key material.
 
-NOTE: Due to a quirk of hsmtool's SLHDSA support, the SLHDSA private material is
-exported in the generate stage.
-
 The exported key material is in PEM format.
 
 - For ECDSA keys, the PEM container holds a PKCS#8 key object.
@@ -55,9 +52,7 @@ Once the script completes, you can examine the files left in each of the `root`,
 
 ## TODOs
 
-1. Update upstream `hsmtool` to support SLH-DSA via PKCS#11.
-2. Update the local templates to use SLH-DSA for PKCS#11.
-3. Learn how to execute the templates on a real HSM rather than SoftHSM (for
+1. Learn how to execute the templates on a real HSM rather than SoftHSM (for
    example, the Entrust HSMs often require you to set some magic environment
    variables if you want to generate keys that can be exported, such as
    `CKNFAST_OVERRIDE_SECURITY_ASSURANCES=tokenkeys`).
