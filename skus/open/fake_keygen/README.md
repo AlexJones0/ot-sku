@@ -39,7 +39,10 @@ The exported key material is in PEM format.
 You can perform a practice run of keygen and export using SoftHSM2.
 
 1. Update `softhsm_sourceme.sh` and adjust the path of `SOFTHSM2_CONF`.
-2. Update `softhsm.conf` and adjust the token path.
+   If you're using a patched SoftHSM (e.g. from OpenTitan), you may also need to ensure the `HSMTOOL_MODULE` points to the right patched `libsofthsm2.so`.
+   Then source this file to set up your environment.
+2. Ensure that the generated `softhsm2.conf` contains a `directories.tokendir` path to
+   the correct token path (`skus/open/fake_keygen/data` in this repository).
 3. Remove any previous token storage, if present (e.g. `rm -rf <uuid-like-name>`)
 4. Initialize the token: `./init_softhsm.sh`.
 5. Generate and export everything: `./keygen_and_export.sh`.
