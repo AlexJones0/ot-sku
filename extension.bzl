@@ -26,17 +26,21 @@ hub_repo = repository_rule(
 # Important note: this dictionary is read and modified by the release script (script/release.py).
 # Therefore, it needs to remain a constant dictionary which can be parsed by the python ast module.
 _ARCHIVES = {
-    "presign_perso": {
-        "url": "https://github.com/lowRISC/ot-sku/releases/download/FAKE_BUILD_20260518_rc00/presign_perso.tar.xz",
-    },
     "presign_rom_ext": {
-        "url": "https://github.com/lowRISC/ot-sku/releases/download/FAKE_BUILD_20260518_rc00/presign_rom_ext.tar.xz",
+        "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-5/presign_rom_ext.tar.xz",
+        "sha256": "08affc86809023cd5ad433e1438ee8d3c0b8387ac356651faaf18a382cc1836b",
     },
-    "perso_release": {
-        "url": "https://github.com/lowRISC/ot-sku/releases/download/FAKE_RELEASE_20260518_rc00/perso_release.tar.xz",
+    "presign_perso": {
+        "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-5/presign_perso.tar.xz",
+        "sha256": "bfa77628baf6940222c2dab0ead10219ea95d70b23723f86b57c89f195423c5f",
     },
     "rom_ext_release": {
-        "url": "https://github.com/lowRISC/ot-sku/releases/download/FAKE_RELEASE_20260518_rc00/rom_ext_release.tar.xz",
+        "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-5-final/rom_ext_release.tar.xz",
+        "sha256": "2be5b5a44234311453a9b92d9666c6e2327b1f2358598a981ce7b2497664b74e",
+    },
+    "perso_release": {
+        "url": "https://github.com/AlexJones0/ot-sku/releases/download/test-release-slh-dsa-5-final/perso_release.tar.xz",
+        "sha256": "34eda6824c2e785e07a812b5d982f5a530d30969069fbc0a081f79844249a0eb",
     },
 }
 
