@@ -161,6 +161,11 @@ signature_test(
         ":signed",
     ],
     ecdsa_key = EXT_EARLGREY_SKUS[SKU]["ecdsa_key"],
+    # TODO: this is hardcoded, and there is no guarantee this actually matches the `spx_key` fetched from the config.
+    # This is currently configured to match the domains used by ot00 defined in `skus/open/keys/root:spxset`.
+    # Upstream OpenTitan should consider changing the signature test implementation to get the domain from the SPX
+    # key unless a specific SPX domain is assigned to the test.
+    spx_domain = "PrehashedSha256",
     spx_key = EXT_EARLGREY_SKUS[SKU]["spx_key"],
     tags = ["manual"],
 )
