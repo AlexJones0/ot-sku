@@ -10,7 +10,7 @@ sku_cert(
     name = "ot00_dice_ca",
     certificate = "//open/keys/ca:dice_ca.pem",
     key = "nuvoton-ot00-ca-ecdsa-0",
-    key_id = "0xDBF5003E7CB9EEB524780CCE766E661CFB01C7B2",
+    key_id = "0x7CDDE6D1C7C7B3A87233A3EF92FD2159A09308DC",
     key_type = "Token",
 )
 
