@@ -9,9 +9,6 @@ if [[ -e skus/open/fake_keygen/softhsm2.conf ]]; then
   export SOFTHSM2_CONF=${PWD}/skus/open/fake_keygen/softhsm2.conf
   export HSMTOOL_MODULE=/usr/lib/x86_64-linux-gnu/softhsm/libsofthsm2.so
 
-  # NOTE: we're using PKCS#11 elementary files (CKO_DATA objects) to store SLHDSA keys.
-  export HSMTOOL_SPX_MODULE=pkcs11-ef
-
   # Default configuration for the checked-in database (used for **testing only**)
   export HSMTOOL_TOKEN=temp
   export HSMTOOL_USER=user
