@@ -25,11 +25,8 @@ The following templates are included in each of the subdirs:
 - `export.json5`: Export the private key material.
 - `export_public.json5`: Export the public key material.
 
-The exported key material is in PEM format.
-
-- For ECDSA keys, the PEM container holds a PKCS#8 key object.
-- For SLHDSA keys, the PEM contains holds the raw key material (this is because
-  SLHDSA support was developed before there was a standard container object).
+The exported ECDSA key material is in DER format and the exported SLH-DSA key material is in PEM format.
+Both contain the standard PKCS#8 (/ SPKI) key objects.
 
 ## Practicing with SoftHSM2
 
